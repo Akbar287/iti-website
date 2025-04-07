@@ -7,12 +7,7 @@ import {
   CollapsibleContent,
   CollapsibleTrigger,
 } from "@/components/ui/collapsible";
-import {
-  Sheet,
-  SheetContent,
-  SheetTrigger,
-  SheetClose,
-} from "@/components/ui/sheet";
+import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 import Image from "next/image";
 import Logo from "@/assets/images/Logo-ITI-oke-1.png";
@@ -214,13 +209,13 @@ const Navbar = () => {
           href: "#",
           key: "alumni",
           backgroundImage:
-            "https://images.unsplash.com/photo-1517486808906-6ca8b3f8e1c1?q=80&w=1074&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1660795670724-0dfa88fc1dda?q=80&w=1074&auto=format&fit=crop",
           childMenu: [
             {
               title: "Jaringan Alumni",
               href: "#",
               image:
-                "https://images.unsplash.com/photo-1517486808906-6ca8b3f8e1c1?q=80&w=1074&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1660795670724-0dfa88fc1dda?q=80&w=1074&auto=format&fit=crop",
               description:
                 "Terhubung dengan alumni kami dan jelajahi jaringan profesional yang luas.",
             },
@@ -232,20 +227,20 @@ const Navbar = () => {
       title: "Berita & Acara",
       key: "news-events",
       backgroundImage:
-        "https://images.unsplash.com/photo-1567427017947-545c5f96d209?q=80&w=1170&auto=format&fit=crop",
+        "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1170&auto=format&fit=crop",
       submenu: [
         {
           title: "Berita Kampus",
           href: "#news",
           key: "university-news",
           backgroundImage:
-            "https://images.unsplash.com/photo-1567427017947-545c5f96d209?q=80&w=1170&auto=format&fit=crop",
+            "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
               title: "Berita Terbaru",
               href: "#news",
               image:
-                "https://images.unsplash.com/photo-1567427017947-545c5f96d209?q=80&w=1170&auto=format&fit=crop",
+                "https://images.unsplash.com/photo-1504711434969-e33886168f5c?q=80&w=1170&auto=format&fit=crop",
               description:
                 "Dapatkan informasi terbaru tentang acara dan berita terkini di kampus.",
             },
@@ -530,9 +525,6 @@ const Navbar = () => {
                         <MobileMenuItem key={index} item={item} />
                       ))}
                     </div>
-                    <SheetClose className="mt-8 text-sm text-gray-700 hover:text-primary transition-colors duration-200">
-                      Tutup Menu
-                    </SheetClose>
                   </div>
                 </SheetContent>
               </Sheet>
@@ -579,7 +571,7 @@ const Navbar = () => {
 
       {menuOpen && (
         <div
-          className={`fixed inset-0 z-40 h-screen w-screen flex flex-col ${
+          className={`fixed inset-0 z-60 h-screen w-screen flex flex-col ${
             animateMenu ? "opacity-100" : "opacity-0"
           } transition-opacity duration-500`}
         >
@@ -607,7 +599,7 @@ const Navbar = () => {
                     : "-translate-x-10 opacity-0"
                 } transition-all duration-500 delay-100 transform`}
               >
-                <h3 className="text-xl font-playfair font-bold mb-10 text-white animate-in fade-in duration-300 delay-200">
+                <h3 className="text-3xl  font-bold mb-10 text-white animate-in fade-in duration-300 delay-200">
                   Menu
                 </h3>
                 <ul className="space-y-6">
