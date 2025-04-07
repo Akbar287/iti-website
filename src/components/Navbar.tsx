@@ -52,7 +52,6 @@ const Navbar = () => {
 
   useEffect(() => {
     if (menuOpen) {
-      // Set timeout to allow CSS transitions to start after mount
       const timer = setTimeout(() => {
         setAnimateMenu(true);
       }, 10);
@@ -61,154 +60,152 @@ const Navbar = () => {
       setAnimateMenu(false);
     }
   }, [menuOpen]);
-  // Main navigation items with their children and background images
   const navStructure = [
     {
-      title: "About",
+      title: "Tentang",
       key: "about",
       backgroundImage:
         "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?q=80&w=1074&auto=format&fit=crop",
       submenu: [
         {
-          title: "Mission & Vision",
+          title: "Visi dan Misi",
           href: "#about",
           key: "mission",
           backgroundImage:
             "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Our History",
+              title: "Sejarah ITI",
               href: "#",
               image:
                 "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?q=80&w=1074&auto=format&fit=crop",
               description:
-                "Learn about Cambridge University's rich history dating back to 1209.",
+                "Pelajari sejarah dan perkembangan Institut Teknologi Indonesia.",
             },
             {
-              title: "Values",
+              title: "Nilai Kami",
               href: "#",
               image:
                 "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?q=80&w=1170&auto=format&fit=crop",
               description:
-                "Discover the core values that drive our educational mission.",
+                "Jelajahi nilai-nilai yang membentuk budaya dan etika kami.",
             },
           ],
         },
         {
-          title: "Leadership",
+          title: "Kepemimpinan",
           href: "#",
           key: "leadership",
           backgroundImage:
             "https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Faculty",
+              title: "Fakultas",
               href: "#",
               image:
                 "https://images.unsplash.com/photo-1590650153855-d9e808231d41?q=80&w=1170&auto=format&fit=crop",
-              description:
-                "Meet our world-class faculty and academic leadership.",
+              description: "Kenali fakultas dan departemen kami yang beragam.",
             },
           ],
         },
         {
-          title: "History",
+          title: "Sejarah",
           href: "#",
           key: "history",
           backgroundImage:
             "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1132&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Timeline",
+              title: "Garis Waktu",
               href: "#",
               image:
                 "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1132&auto=format&fit=crop",
               description:
-                "Explore the key milestones in Cambridge's storied history.",
+                "Jelajahi garis waktu sejarah ITI dan pencapaian pentingnya.",
             },
           ],
         },
       ],
     },
     {
-      title: "Academics",
+      title: "Akademik",
       key: "academics",
       backgroundImage:
         "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1170&auto=format&fit=crop",
       submenu: [
         {
-          title: "Undergraduate",
+          title: "Sarjana",
           href: "#",
           key: "undergraduate",
           backgroundImage:
             "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Programs",
+              title: "Program Sutudi",
               href: "#",
               image:
                 "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=1170&auto=format&fit=crop",
               description:
-                "Explore our comprehensive undergraduate programs and majors.",
+                "Jelajahi program studi sarjana kami yang beragam dan inovatif.",
             },
           ],
         },
         {
-          title: "Graduate",
+          title: "Pasca Sarjana",
           href: "#",
           key: "graduate",
           backgroundImage:
             "https://images.unsplash.com/photo-1627556704302-624286467c65?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Master's Programs",
+              title: "Program Studi Pascasarjana",
               href: "#",
               image:
                 "https://images.unsplash.com/photo-1627556704302-624286467c65?q=80&w=1170&auto=format&fit=crop",
               description:
-                "Discover our advanced graduate and doctoral programs.",
+                "Jelajahi program studi pascasarjana kami yang dirancang untuk mempersiapkan Anda menghadapi tantangan masa depan.",
             },
           ],
         },
         {
-          title: "Research",
+          title: "Penelitian",
           href: "#",
           key: "research",
           backgroundImage:
             "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Research Centers",
+              title: "Pusat Penelitian",
               href: "#focus",
               image:
                 "https://images.unsplash.com/photo-1532094349884-543bc11b234d?q=80&w=1170&auto=format&fit=crop",
               description:
-                "Learn about our cutting-edge research initiatives and centers.",
+                "Pelajari pusat penelitian kami yang berfokus pada inovasi dan teknologi.",
             },
           ],
         },
       ],
     },
     {
-      title: "Community",
+      title: "Komunitas",
       key: "community",
       backgroundImage:
         "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1170&auto=format&fit=crop",
       submenu: [
         {
-          title: "Student Life",
+          title: "Mahasiswa",
           href: "#community",
           key: "student-life",
           backgroundImage:
             "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Campus Activities",
+              title: "Aktivitas Mahasiswa",
               href: "#",
               image:
                 "https://images.unsplash.com/photo-1523580846011-d3a5bc25702b?q=80&w=1170&auto=format&fit=crop",
               description:
-                "Explore the vibrant student life and activities on campus.",
+                "Jelajahi berbagai aktivitas dan organisasi mahasiswa di ITI.",
             },
           ],
         },
@@ -220,53 +217,54 @@ const Navbar = () => {
             "https://images.unsplash.com/photo-1517486808906-6ca8b3f8e1c1?q=80&w=1074&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Alumni Network",
+              title: "Jaringan Alumni",
               href: "#",
               image:
                 "https://images.unsplash.com/photo-1517486808906-6ca8b3f8e1c1?q=80&w=1074&auto=format&fit=crop",
               description:
-                "Connect with our global network of Cambridge alumni.",
+                "Terhubung dengan alumni kami dan jelajahi jaringan profesional yang luas.",
             },
           ],
         },
       ],
     },
     {
-      title: "News & Events",
+      title: "Berita & Acara",
       key: "news-events",
       backgroundImage:
         "https://images.unsplash.com/photo-1567427017947-545c5f96d209?q=80&w=1170&auto=format&fit=crop",
       submenu: [
         {
-          title: "University News",
+          title: "Berita Kampus",
           href: "#news",
           key: "university-news",
           backgroundImage:
             "https://images.unsplash.com/photo-1567427017947-545c5f96d209?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Latest Headlines",
+              title: "Berita Terbaru",
               href: "#news",
               image:
                 "https://images.unsplash.com/photo-1567427017947-545c5f96d209?q=80&w=1170&auto=format&fit=crop",
               description:
-                "Stay updated with the latest news and announcements from Cambridge.",
+                "Dapatkan informasi terbaru tentang acara dan berita terkini di kampus.",
             },
           ],
         },
         {
-          title: "Events Calendar",
+          title: "Kegiatan",
           href: "#events",
           key: "events-calendar",
           backgroundImage:
             "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Upcoming Events",
+              title: "Kegiatan Akademik",
               href: "#events",
               image:
                 "https://images.unsplash.com/photo-1587825140708-dfaf72ae4b04?q=80&w=1170&auto=format&fit=crop",
-              description: "Browse our calendar of academic and social events.",
+              description:
+                "Ikuti kegiatan akademik dan seminar yang diadakan di kampus.",
             },
           ],
         },
@@ -279,36 +277,36 @@ const Navbar = () => {
         "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1170&auto=format&fit=crop",
       submenu: [
         {
-          title: "Library",
+          title: "Perpustakaan",
           href: "#resources",
           key: "library",
           backgroundImage:
             "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Digital Collections",
+              title: "Koleksi Digital",
               href: "#resources",
               image:
                 "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?q=80&w=1170&auto=format&fit=crop",
               description:
-                "Access our extensive digital and physical library collections.",
+                "Akses koleksi digital kami, termasuk jurnal, buku, dan artikel.",
             },
           ],
         },
         {
-          title: "Career Services",
+          title: "Karir",
           href: "#",
           key: "career",
           backgroundImage:
             "https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=1170&auto=format&fit=crop",
           childMenu: [
             {
-              title: "Career Development",
+              title: "Pengembangan Karir",
               href: "#",
               image:
                 "https://images.unsplash.com/photo-1577412647305-991150c7d163?q=80&w=1170&auto=format&fit=crop",
               description:
-                "Explore career services and opportunities for students and alumni.",
+                "Jelajahi sumber daya pengembangan karir kami, termasuk pelatihan dan bimbingan.",
             },
           ],
         },
@@ -401,7 +399,7 @@ const Navbar = () => {
                 <div key={subIndex} className="py-2">
                   <Collapsible>
                     <div className="flex items-center justify-between">
-                      <a href={subItem.href} className="text-cambridge-navy">
+                      <a href={subItem.href} className="text-gray-700">
                         {subItem.title}
                       </a>
                       {subItem.childMenu && (
@@ -420,7 +418,7 @@ const Navbar = () => {
                             <a
                               key={childIndex}
                               href={childItem.href}
-                              className="block py-2 text-cambridge-navy"
+                              className="block py-2 text-gray-700"
                             >
                               {childItem.title}
                             </a>
@@ -532,7 +530,7 @@ const Navbar = () => {
                         <MobileMenuItem key={index} item={item} />
                       ))}
                     </div>
-                    <SheetClose className="mt-8 text-sm text-cambridge-gray hover:text-primary transition-colors duration-200">
+                    <SheetClose className="mt-8 text-sm text-gray-700 hover:text-primary transition-colors duration-200">
                       Tutup Menu
                     </SheetClose>
                   </div>
@@ -554,20 +552,20 @@ const Navbar = () => {
                   <Input
                     ref={searchInputRef}
                     type="search"
-                    placeholder="Search Cambridge University..."
+                    placeholder="Cari Kampus ITI..."
                     className="flex-grow border-0 focus-visible:ring-0 focus-visible:ring-offset-0 animate-in fade-in duration-300"
                   />
                   <Button
                     type="submit"
                     variant="ghost"
-                    className="text-cambridge-navy hover:text-primary hover:bg-transparent transition-colors duration-200"
+                    className="text-gray-700 hover:text-primary hover:bg-transparent transition-colors duration-200"
                   >
                     <Search className="h-5 w-5" />
                   </Button>
                   <Button
                     type="button"
                     variant="ghost"
-                    className="text-cambridge-navy hover:text-primary hover:bg-transparent transition-colors duration-200"
+                    className="text-gray-700 hover:text-primary hover:bg-transparent transition-colors duration-200"
                     onClick={toggleSearch}
                   >
                     <X className="h-5 w-5" />
@@ -592,19 +590,16 @@ const Navbar = () => {
             <div className="absolute inset-0 bg-black/60" />
           </div>
 
-          {/* Close Button */}
           <button
             onClick={closeMenu}
-            className="absolute top-6 right-6 text-white hover:text-cambridge-gold z-50 transition-all duration-300 transform hover:rotate-90"
+            className="absolute top-6 right-6 text-white hover:text-primary z-50 transition-all duration-300 transform hover:rotate-90"
             aria-label="Close Menu"
           >
             <X className="h-8 w-8" />
           </button>
 
-          {/* Menu Content */}
           <div className="container mx-auto px-4 py-24 relative z-10 flex flex-1 overflow-hidden">
             <div className="grid grid-cols-12 gap-6 h-full">
-              {/* First column: Main menu */}
               <div
                 className={`col-span-2 border-r border-white/20 pr-6 ${
                   animateMenu
@@ -629,16 +624,16 @@ const Navbar = () => {
                           )
                         }
                         className={cn(
-                          "text-left w-full py-2 text-lg font-medium relative hover:text-cambridge-gold transition-colors group",
+                          "text-left w-full py-2 text-lg font-medium relative hover:text-primary transition-colors group",
                           activeMenu === item.key
-                            ? "text-cambridge-gold"
+                            ? "text-primary"
                             : "text-white"
                         )}
                       >
                         {item.title}
                         <span
                           className={cn(
-                            "absolute bottom-0 left-0 h-0.5 bg-cambridge-gold transition-all duration-300",
+                            "absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300",
                             activeMenu === item.key
                               ? "w-full"
                               : "w-0 group-hover:w-full"
@@ -650,7 +645,6 @@ const Navbar = () => {
                 </ul>
               </div>
 
-              {/* Second column: Submenu */}
               <div
                 className={`col-span-2 border-r border-white/20 pr-6 ${
                   animateMenu
@@ -684,16 +678,16 @@ const Navbar = () => {
                                 )
                               }
                               className={cn(
-                                "text-left w-full py-1 relative hover:text-cambridge-gold transition-colors group",
+                                "text-left w-full py-1 relative hover:text-primary transition-colors group",
                                 activeSubmenu === subItem.key
-                                  ? "text-cambridge-gold"
+                                  ? "text-primary"
                                   : "text-white"
                               )}
                             >
                               {subItem.title}
                               <span
                                 className={cn(
-                                  "absolute bottom-0 left-0 h-0.5 bg-cambridge-gold transition-all duration-300",
+                                  "absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300",
                                   activeSubmenu === subItem.key
                                     ? "w-full"
                                     : "w-0 group-hover:w-full"
@@ -745,13 +739,13 @@ const Navbar = () => {
                               >
                                 <a
                                   href={childItem.href}
-                                  className="block py-1 relative text-white hover:text-cambridge-gold transition-colors group"
+                                  className="block py-1 relative text-white hover:text-primary transition-colors group"
                                   onMouseEnter={() =>
                                     setActiveChildItem(childItem)
                                   }
                                 >
                                   {childItem.title}
-                                  <span className="absolute bottom-0 left-0 h-0.5 bg-cambridge-gold transition-all duration-300 w-0 group-hover:w-full" />
+                                  <span className="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 w-0 group-hover:w-full" />
                                 </a>
                               </li>
                             ))}
@@ -771,7 +765,7 @@ const Navbar = () => {
                               className="w-full h-full object-cover transition-transform duration-500 hover:scale-105"
                             />
                           </div>
-                          <h4 className="text-xl font-medium text-cambridge-gold mb-3 animate-in fade-in duration-300">
+                          <h4 className="text-xl font-medium text-primary mb-3 animate-in fade-in duration-300">
                             {activeChildItem.title}
                           </h4>
                           <p className="text-white/90 animate-in fade-in duration-300 delay-100">
@@ -781,51 +775,51 @@ const Navbar = () => {
                       </div>
                     ) : (
                       <div className="bg-white/10 backdrop-blur-sm rounded-lg p-6 h-full animate-in fade-in scale-in duration-500">
-                        <h4 className="font-medium text-cambridge-gold mb-4">
+                        <h4 className="font-medium text-primary mb-4">
                           Quick Links
                         </h4>
                         <div className="grid grid-cols-2 gap-4 text-sm">
                           <a
                             href="#"
-                            className="text-white hover:text-cambridge-gold hover:underline group relative transition-colors duration-200"
+                            className="text-white hover:text-primary hover:underline group relative transition-colors duration-200"
                           >
                             Faculty Directory
-                            <span className="absolute bottom-0 left-0 h-0.5 bg-cambridge-gold transition-all duration-300 w-0 group-hover:w-full" />
+                            <span className="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 w-0 group-hover:w-full" />
                           </a>
                           <a
                             href="#"
-                            className="text-white hover:text-cambridge-gold hover:underline group relative transition-colors duration-200"
+                            className="text-white hover:text-primary hover:underline group relative transition-colors duration-200"
                           >
                             Academic Calendar
-                            <span className="absolute bottom-0 left-0 h-0.5 bg-cambridge-gold transition-all duration-300 w-0 group-hover:w-full" />
+                            <span className="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 w-0 group-hover:w-full" />
                           </a>
                           <a
                             href="#"
-                            className="text-white hover:text-cambridge-gold hover:underline group relative transition-colors duration-200"
+                            className="text-white hover:text-primary hover:underline group relative transition-colors duration-200"
                           >
                             Campus Map
-                            <span className="absolute bottom-0 left-0 h-0.5 bg-cambridge-gold transition-all duration-300 w-0 group-hover:w-full" />
+                            <span className="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 w-0 group-hover:w-full" />
                           </a>
                           <a
                             href="#"
-                            className="text-white hover:text-cambridge-gold hover:underline group relative transition-colors duration-200"
+                            className="text-white hover:text-primary hover:underline group relative transition-colors duration-200"
                           >
                             Library Services
-                            <span className="absolute bottom-0 left-0 h-0.5 bg-cambridge-gold transition-all duration-300 w-0 group-hover:w-full" />
+                            <span className="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 w-0 group-hover:w-full" />
                           </a>
                           <a
                             href="#"
-                            className="text-white hover:text-cambridge-gold hover:underline group relative transition-colors duration-200"
+                            className="text-white hover:text-primary hover:underline group relative transition-colors duration-200"
                           >
                             Research Centers
-                            <span className="absolute bottom-0 left-0 h-0.5 bg-cambridge-gold transition-all duration-300 w-0 group-hover:w-full" />
+                            <span className="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 w-0 group-hover:w-full" />
                           </a>
                           <a
                             href="#"
-                            className="text-white hover:text-cambridge-gold hover:underline group relative transition-colors duration-200"
+                            className="text-white hover:text-primary hover:underline group relative transition-colors duration-200"
                           >
                             Student Services
-                            <span className="absolute bottom-0 left-0 h-0.5 bg-cambridge-gold transition-all duration-300 w-0 group-hover:w-full" />
+                            <span className="absolute bottom-0 left-0 h-0.5 bg-primary transition-all duration-300 w-0 group-hover:w-full" />
                           </a>
                         </div>
                       </div>
