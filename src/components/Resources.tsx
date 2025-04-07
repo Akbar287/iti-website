@@ -15,7 +15,7 @@ const Resources = () => {
       icon: <FileText className="h-8 w-8 text-primary" />,
       title: "Publikasi Penelitian",
       description:
-        "Akses jurnal, artikel, dan publikasi penelitian terbaru dari Cambridge.",
+        "Akses jurnal, artikel, dan publikasi penelitian terbaru dari ITI.",
       resources: [
         { title: "Penelitian Annual 2025", link: "#", type: "PDF" },
         { title: "Jurnal Sains ITI", link: "#", type: "Link" },
@@ -95,7 +95,7 @@ const Resources = () => {
   };
 
   return (
-    <section id="resources" className="bg-cambridge-cream py-20 px-4">
+    <section id="resources" className=" py-20 px-4">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="section-title mx-auto text-center">
@@ -117,13 +117,11 @@ const Resources = () => {
               <div className="p-6">
                 <div className="flex items-center mb-4">
                   {category.icon}
-                  <h3 className="text-xl font-bold ml-3 text-cambridge-maroon">
+                  <h3 className="text-xl font-bold ml-3 text-primary">
                     {category.title}
                   </h3>
                 </div>
-                <p className="text-cambridge-gray mb-6">
-                  {category.description}
-                </p>
+                <p className="text-gray-700 mb-6">{category.description}</p>
 
                 <div className="space-y-3">
                   {category.resources.map((resource, i) => (

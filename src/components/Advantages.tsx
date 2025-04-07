@@ -10,37 +10,37 @@ import {
 const Advantages = () => {
   const advantages = [
     {
-      icon: <GraduationCap className="h-10 w-10 text-cambridge-gold" />,
+      icon: <GraduationCap className="h-10 w-10 text-primary" />,
       title: "World-Class Education",
       description:
         "Taught by leaders in their fields, our curriculum combines theoretical knowledge with practical experience and critical thinking.",
     },
     {
-      icon: <Globe className="h-10 w-10 text-cambridge-gold" />,
+      icon: <Globe className="h-10 w-10 text-primary" />,
       title: "Global Perspective",
       description:
         "Our diverse community of students and faculty from over 150 countries brings global perspectives and cultural awareness.",
     },
     {
-      icon: <Users className="h-10 w-10 text-cambridge-gold" />,
+      icon: <Users className="h-10 w-10 text-primary" />,
       title: "Collegiate System",
       description:
         "Our 31 colleges provide supportive, inclusive communities where students live, study, and socialize together.",
     },
     {
-      icon: <BookOpen className="h-10 w-10 text-cambridge-gold" />,
+      icon: <BookOpen className="h-10 w-10 text-primary" />,
       title: "Research Excellence",
       description:
         "Engage with cutting-edge research and innovation across disciplines, with opportunities for student involvement at all levels.",
     },
     {
-      icon: <Trophy className="h-10 w-10 text-cambridge-gold" />,
+      icon: <Trophy className="h-10 w-10 text-primary" />,
       title: "Career Success",
       description:
         "Our graduates are highly sought after by employers worldwide, with a global network of over 200,000 alumni in leadership positions.",
     },
     {
-      icon: <Lightbulb className="h-10 w-10 text-cambridge-gold" />,
+      icon: <Lightbulb className="h-10 w-10 text-primary" />,
       title: "Tradition of Innovation",
       description:
         "From the discovery of DNA's structure to advancements in artificial intelligence, we've led breakthroughs that change the world.",
@@ -53,7 +53,7 @@ const Advantages = () => {
         <div className="text-center mb-16">
           <h2 className="section-title mx-auto text-center">
             Kenapa harus memilih ITI ?
-            <span className="block mx-auto mt-2 w-24 h-1 bg-cambridge-gold"></span>
+            <span className="block mx-auto mt-2 w-24 h-1 bg-primary"></span>
           </h2>
           <p className="section-subtitle mx-auto">
             ITI adalah lembaga pendidikan tinggi yang terkemuka di dunia, dengan

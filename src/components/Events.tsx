@@ -99,7 +99,7 @@ const Events = () => {
         <div className="text-center mb-16">
           <h2 className="section-title mx-auto text-center">
             Kegiatan dan Event
-            <span className="block mx-auto mt-2 w-24 h-1 bg-cambridge-gold"></span>
+            <span className="block mx-auto mt-2 w-24 h-1 bg-primary"></span>
           </h2>
           <p className="section-subtitle mx-auto">
             Tetap terhubung dengan kegiatan dan acara terbaru di ITI. Kami
@@ -154,20 +154,18 @@ const Events = () => {
             >
               <div className="p-6 flex flex-col md:flex-row gap-6">
                 <div className="md:w-1/4 flex items-center space-x-3">
-                  <div className="bg-cambridge-cream p-3 rounded-full">
-                    <CalendarIcon className="h-6 w-6 text-cambridge-maroon" />
+                  <div className="bg-primary/30 p-3 rounded-full">
+                    <CalendarIcon className="h-6 w-6 text-primary" />
                   </div>
                   <div>
-                    <p className="font-bold text-cambridge-navy">
-                      {event.date}
-                    </p>
-                    <p className="text-sm text-cambridge-gray">{event.time}</p>
+                    <p className="font-bold text-gray-700">{event.date}</p>
+                    <p className="text-sm text-gray-700">{event.time}</p>
                   </div>
                 </div>
 
                 <div className="md:w-3/4">
                   <div className="flex flex-wrap justify-between items-start mb-2">
-                    <h4 className="text-xl font-bold text-cambridge-maroon">
+                    <h4 className="text-xl font-bold text-primary">
                       {event.title}
                     </h4>
                     <span
@@ -178,11 +176,11 @@ const Events = () => {
                       {event.category}
                     </span>
                   </div>
-                  <p className="text-sm text-cambridge-gray mb-2">
+                  <p className="text-sm text-gray-700 mb-2">
                     <span className="font-medium">Lokasi:</span>{" "}
                     {event.location}
                   </p>
-                  <p className="text-sm text-cambridge-gray mb-4">
+                  <p className="text-sm text-gray-700 mb-4">
                     {event.description}
                   </p>
                   <Button

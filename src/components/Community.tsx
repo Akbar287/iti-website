@@ -14,43 +14,43 @@ const Community = () => {
     {
       id: 1,
       src: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      alt: "Students studying in the library",
+      alt: "Mahasiswa belajar di perpustakaan",
       caption:
-        "The historical Central Library provides a peaceful study environment",
+        "Perpustakaan kami adalah tempat yang tenang untuk belajar dan penelitian",
     },
     {
       id: 2,
       src: "https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      alt: "Students in graduation gowns",
+      alt: "Mahasiswa merayakan kelulusan",
       caption:
-        "Graduation day is one of the most cherished traditions at Cambridge",
+        "Perayaan kelulusan adalah momen yang penuh kebahagiaan dan pencapaian",
     },
     {
       id: 3,
       src: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      alt: "Students discussing in a seminar",
-      caption: "Small group seminars foster deep intellectual engagement",
+      alt: "Mahasiswa dalam seminar kecil",
+      caption: "Diskusi seminar kecil mendorong kolaborasi dan inovasi",
     },
     {
       id: 4,
       src: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-      alt: "Historic university buildings",
+      alt: "Kampus dengan arsitektur bersejarah",
       caption:
-        "Our historic architecture creates an inspiring learning environment",
+        "Kampus kami memiliki arsitektur yang indah dan bersejarah, menciptakan suasana belajar yang unik",
     },
     {
       id: 5,
       src: "https://images.unsplash.com/photo-1606761568499-6d2451b23c66?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
-      alt: "Sports team celebrating",
+      alt: "Mahasiswa berolahraga di lapangan",
       caption:
-        "Athletics and team sports are an important part of Cambridge life",
+        "Kesehatan dan kebugaran adalah bagian penting dari kehidupan mahasiswa kami",
     },
     {
       id: 6,
       src: "https://images.unsplash.com/photo-1607237138185-eedd9c632b0b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80",
-      alt: "International cultural festival",
+      alt: "Mahasiswa dari berbagai budaya",
       caption:
-        "Our diverse student body celebrates cultures from around the world",
+        "Kehidupan kampus kami kaya akan keragaman budaya, menciptakan lingkungan yang inklusif dan mendukung",
     },
   ];
 
@@ -155,10 +155,10 @@ const Community = () => {
                     className="w-12 h-12 rounded-full mr-4 object-cover"
                   />
                   <div>
-                    <p className="font-bold text-cambridge-navy">
+                    <p className="font-bold text-gray-700">
                       {testimonial.name}
                     </p>
-                    <p className="text-sm text-cambridge-gray">
+                    <p className="text-sm text-gray-700">
                       {testimonial.position}
                     </p>
                   </div>

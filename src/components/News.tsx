@@ -77,7 +77,7 @@ const News = () => {
               <p className="text-white/90 mb-4 hidden md:block">
                 {featuredStory.excerpt}
               </p>
-              <Button className="group bg-white hover:bg-gray-100 text-cambridge-maroon hover:underline transition-all duration-300">
+              <Button className="group bg-white hover:bg-gray-100 text-primary hover:underline transition-all duration-300">
                 <span className="flex items-center">
                   Baca Selengkapnya
                   <ChevronRight className="h-4 w-4 ml-1 transform transition-transform duration-300 group-hover:translate-x-1" />
@@ -101,17 +101,15 @@ const News = () => {
             />
             <div className="p-6">
               <div className="flex justify-between items-center mb-3">
-                <span className="text-cambridge-navy text-sm font-medium">
+                <span className="text-gray-700 text-sm font-medium">
                   {article.category}
                 </span>
-                <span className="text-cambridge-gray text-sm">
-                  {article.date}
-                </span>
+                <span className="text-gray-700 text-sm">{article.date}</span>
               </div>
               <h3 className="text-xl font-bold mb-3 line-clamp-2 text-gray-700">
                 {article.title}
               </h3>
-              <p className="text-cambridge-gray mb-4 line-clamp-3">
+              <p className="text-gray-700 mb-4 line-clamp-3">
                 {article.excerpt}
               </p>
               <Button

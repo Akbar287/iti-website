@@ -12,7 +12,7 @@ import { Button } from "@/components/ui/button";
 const FocusTopics = () => {
   const focusAreas = [
     {
-      icon: <Microscope className="h-16 w-16 text-cambridge-maroon" />,
+      icon: <Microscope className="h-16 w-16 text-primary" />,
       title: "Inovasi & Penemuan",
       description:
         "Mendorong inovasi dan penemuan baru dalam sains, teknologi, dan seni.",
@@ -23,7 +23,7 @@ const FocusTopics = () => {
       ],
     },
     {
-      icon: <Globe className="h-16 w-16 text-cambridge-maroon" />,
+      icon: <Globe className="h-16 w-16 text-primary" />,
       title: "Tantangan Global",
       description:
         "Menjawab tantangan global seperti perubahan iklim, kesehatan masyarakat, dan ketidakadilan sosial.",
@@ -34,7 +34,7 @@ const FocusTopics = () => {
       ],
     },
     {
-      icon: <Brain className="h-16 w-16 text-cambridge-maroon" />,
+      icon: <Brain className="h-16 w-16 text-primary" />,
       title: "Kognisi & Perilaku",
       description:
         "Meneliti cara kerja pikiran manusia dan dampaknya terhadap perilaku dan masyarakat.",
@@ -45,7 +45,7 @@ const FocusTopics = () => {
       ],
     },
     {
-      icon: <HeartPulse className="h-16 w-16 text-cambridge-maroon" />,
+      icon: <HeartPulse className="h-16 w-16 text-primary" />,
       title: "Kesehatan & Kesejahteraan",
       description:
         "Meningkatkan kesehatan dan kesejahteraan individu dan komunitas melalui penelitian dan inovasi.",
@@ -56,7 +56,7 @@ const FocusTopics = () => {
       ],
     },
     {
-      icon: <Scale className="h-16 w-16 text-cambridge-maroon" />,
+      icon: <Scale className="h-16 w-16 text-primary" />,
       title: "Sosial & Kebijakan",
       description:
         "Meneliti isu-isu sosial dan kebijakan untuk menciptakan masyarakat yang lebih adil dan berkelanjutan.",
@@ -67,7 +67,7 @@ const FocusTopics = () => {
       ],
     },
     {
-      icon: <Atom className="h-16 w-16 text-cambridge-maroon" />,
+      icon: <Atom className="h-16 w-16 text-primary" />,
       title: "Matematika & Teori",
       description:
         "Meneliti konsep-konsep matematika dan teori-teori yang mendasari ilmu pengetahuan.",
@@ -84,7 +84,7 @@ const FocusTopics = () => {
       <div className="text-center mb-16">
         <h2 className="section-title mx-auto text-center">
           Bidang Fokus Penelitian
-          <span className="block mx-auto mt-2 w-24 h-1 bg-cambridge-gold"></span>
+          <span className="block mx-auto mt-2 w-24 h-1 bg-primary"></span>
         </h2>
         <p className="section-subtitle mx-auto">
           Jelajahi berbagai bidang fokus penelitian yang mencakup inovasi,
@@ -100,16 +100,16 @@ const FocusTopics = () => {
           >
             <div className="flex flex-col items-center text-center">
               <div className="mb-6">{area.icon}</div>
-              <h3 className="text-xl font-bold mb-3 text-cambridge-maroon">
+              <h3 className="text-xl font-bold mb-3 text-primary">
                 {area.title}
               </h3>
-              <p className="text-cambridge-gray mb-6">{area.description}</p>
+              <p className="text-gray-700 mb-6">{area.description}</p>
               <div className="w-full space-y-2">
                 {area.links.map((link, i) => (
                   <a
                     key={i}
                     href={link.url}
-                    className="group flex items-center justify-between p-3 bg-cambridge-cream rounded-md text-cambridge-navy hover:bg-cambridge-gold/20 transition-colors"
+                    className="group flex items-center justify-between p-3 rounded-md text-gray-700 hover:bg-primary/20 transition-colors"
                   >
                     <span className="group-hover:underline transition-all duration-300">
                       {link.text}

@@ -14,7 +14,7 @@ import { Separator } from "./ui/separator";
 
 const Footer = () => {
   const quickLinks = [
-    { text: "About Cambridge", url: "#about" },
+    { text: "About", url: "#about" },
     { text: "Admissions", url: "#" },
     { text: "Academics", url: "#" },
     { text: "Research", url: "#focus" },
@@ -33,7 +33,7 @@ const Footer = () => {
 
   const connect = [
     { text: "News & Events", url: "#news" },
-    { text: "Support Cambridge", url: "#" },
+    { text: "Support", url: "#" },
     { text: "Visit Campus", url: "#" },
     { text: "Employment", url: "#" },
     { text: "Emergency Info", url: "#" },
